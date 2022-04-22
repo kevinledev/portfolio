@@ -2731,7 +2731,7 @@ ul.actions.fit.stacked {
 ul.icons {
 	cursor: default;
 	list-style: none;
-	padding-left: 0;
+	margin:0px 0 0 0;
 }
 
 ul.icons li {
@@ -3929,33 +3929,65 @@ body.is-preload #header.alt .logo {
 }
 
 .skills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    height: 180px;
-    width: 340px;
-    margin-left: 42px;
-    box-shadow: -10px -10px 30px 0px #fff, 10px 10px 30px 0px hsl(240deg 12% 72% / 40%);
-    gap: 8px;
-    padding: 16px;
+	list-style:none;
+	display:flex;
+	/* flex-wrap:wrap; */
+	flex-direction: row;
+	gap: 16px;
+	justify-self: flex-start;
+	/* margin-bottom: 120px; */
+		padding-bottom: 36px;
+		padding-top:78px;
+}
+
+.skills li{
+background-color: #f0f0f3;
+    box-shadow: -12px -12px 25px 0 #fff, 12px 12px 25px 0 hsl(240deg 12% 72% / 40%);
+		text-align: center;
+		padding: 8px 16px;
+		font-size: 18px;
+		/* font-weight:700; */
+}
+
+.column{
+	display:flex;
+	flex-direction:column;
+	gap: 16px;
+}
+
+
+.skills span{
+	color:#05f;
+	/* font-weight:700; */
 }
 
 .dev-links{
 	display:flex;
 	flex-direction: row;
 	width: 100%;
+		justify-content: center;
+	align-items: center;
 }
 
-.icons{
-	margin-top:-5px;
+.about-right{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .resume {
 	padding: 0px 12px;
 
 	margin-right:32px;
+}
+
+.about-me{
+	margin-right:40px;
+}
+
+.about-me-title{
+	padding-top:16px;
 }
 
 
